@@ -156,8 +156,6 @@ void loop() {
   if (WiFi.status() != WL_CONNECTED) 
    {
     ticker.attach(0.8, tick);
-    digitalWrite(alarm_led, HIGH);
-    net_ok = false;
     WiFi_up();
    }
   if ((millis() - time_last_chek) > Chek_delay) {    
@@ -214,5 +212,7 @@ void WiFi_up()
   {
     Serial.println("");
     Serial.println("connection failed");
+    digitalWrite(alarm_led, HIGH);
+    net_ok = false;
   }
 }
