@@ -12,4 +12,4 @@ si no hay conexion Led alarma enciende y cuenta tiempo para Reset.
 
 unsigned long reset_delay = 900000; 15 minutos = 15x60x1000
 
-[IMG]http://i65.tinypic.com/dhcvue.png[/IMG]
+![Breadboard Layout and case](https://raw.githubusercontent.com/ermaya/esp8266-automatic-router-reset/master/reset_router/reset_bb.png)
